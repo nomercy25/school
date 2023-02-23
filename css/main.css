@@ -994,7 +994,7 @@ input[type="email"] {
 
 /*Mobile*/
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 930px){
 
   .container {
     padding: 40px 30px;
@@ -1125,7 +1125,7 @@ li {
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked ~ .menu__box, .menu__item__login, .menu__item__join {
   visibility: visible;
   left: 0;
   z-index: 99;
@@ -1237,6 +1237,8 @@ padding: 30px;
 .product__cards {
   flex-direction: column;
   display: flex;
+  padding-top: 50px;
+
 }
 
 .product__supheading p {
@@ -1261,6 +1263,7 @@ padding: 30px;
 }
 .choice__cards {
   flex-direction: column;
+  padding-top: 0;
 }
 .choice__card {
   width: 100%;
@@ -1321,13 +1324,15 @@ padding: 30px;
 
 .rights__wrapper {
   margin-top: 50px;
+  height: 100px;
 }
 .footer__rights {
-  padding: 31px 30px 0;
+  padding: 31px 30px 0px;
 }
 
 .footer__reserved p { 
   line-height: 20px;
   font-size: 11px;
-
+  width: 85%;
+}
 }
