@@ -883,6 +883,7 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   border-radius: 5px;
 }
 
@@ -1040,7 +1041,7 @@ input[type="email"] {
   background-repeat: no-repeat;
   position: fixed;
   visibility: hidden;
-  overflow-y: hidden;
+  overflow: unset;
   top: 0;
   left: -100%;
   width: 100%;
@@ -1125,7 +1126,7 @@ li {
   transform: rotate(90deg);
 }
 
-#menu__toggle:checked ~ .menu__box, .menu__item__login, .menu__item__join {
+#menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
   z-index: 99;
